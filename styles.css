@@ -1,0 +1,111 @@
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0; /* Added to remove default body margin */
+}
+
+/* Header and Navigation */
+header {
+  background-color: transparent; /* Made transparent */
+  position: fixed; /* Set to fixed */
+  top: 0; /* Positioned at the top */
+  width: 100%; /* Added to make header full width */
+  z-index: 2; /* Increased z-index to make sure it's above the hero section */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Added padding for better spacing */
+  width: 100%; /* Added to make nav full width */
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 10px; /* Reduced spacing between navigation bar elements */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px; /* Reduced padding for navigation bar elements */
+}
+
+.subscribe-btn {
+  background-color: #0066cc; /* Changed button background color to blue */
+  color: #fff; /* Changed font color to white */
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: 10px; /* Moved button slightly to the left */
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('images/hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Set to full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.get-quote,
+.learn-more {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.get-quote {
+  background-color: #0066cc;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.learn-more {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #0066cc;
+}
